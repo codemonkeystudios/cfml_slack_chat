@@ -1,0 +1,36 @@
+{
+	"slack": {
+		"bot_token": "xoxb-REPLACE-WITH-YOUR-BOT-USER-OAUTH-TOKEN",
+		"signing_secret": "REPLACE-WITH-YOUR-32-CHARACTER-SIGNING-SECRET",
+		"channel_id": "C0000000000",
+		"app_id": "A0000000000",
+		"team_id": "T0000000000",
+		"bot_user_id": ""
+	},
+	"database": {
+		"mode": "application",
+		"datasource": "",
+		"type": "postgresql",
+		"host": "localhost",
+		"port": "5432",
+		"database": "slackchat",
+		"username": "REPLACE-WITH-YOUR-DATABASE-USER",
+		"password": "REPLACE-WITH-YOUR-DATABASE-PASSWORD"
+	},
+	"app": {
+		"public_base_url": "https://replace-with-your-tunnel-hostname.example.com",
+		"allow_insecure_public_url": false,
+		"auto_process_events": true,
+		"dev_tools": true,
+		"log_message_bodies": false,
+		"max_message_length": 4000,
+		"sse_max_seconds": 55,
+		"sse_poll_milliseconds": 1500,
+		"slack_timeout_seconds": 15,
+		"signature_max_age_seconds": 300
+	},
+	"visitor": {
+		"default_name": "Test Visitor",
+		"default_email": "test.visitor@example.com"
+	}
+}

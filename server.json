@@ -1,0 +1,30 @@
+{
+	"name":"cfml-slack-chat",
+	"app":{
+		"cfengine":"lucee@6",
+		"serverHomeDirectory":".engine/"
+	},
+	"web":{
+		"webroot":".",
+		"directoryBrowsing":false,
+		"blockCFAdmin":"external",
+		"http":{
+			"port":8080
+		},
+		"rewrites":{
+			"enable":false
+		},
+		"rules":[
+			"path-prefix('/.config') -> set-error(404)",
+			"path-prefix('/config') -> set-error(404)",
+			"path-prefix('/services') -> set-error(404)",
+			"path-prefix('/tasks') -> set-error(404)",
+			"path-prefix('/sql') -> set-error(404)",
+			"path-prefix('/logs') -> set-error(404)"
+		]
+	},
+	"jvm":{
+		"heapSize":"768"
+	},
+	"openBrowser":false
+}

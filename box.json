@@ -1,0 +1,29 @@
+{
+ "name":"cfml-slack-chat",
+ "slug":"cfml-slack-chat",
+ "version":"1.0.0",
+ "author":"Code Monkey Studio",
+ "location":"",
+ "type":"projects",
+ "shortDescription":"A runnable ColdFusion reference application for a Slack-backed support chat using Server-Sent Events.",
+ "private":true,
+ "ignore":[
+ ".config/",
+ "logs/",
+ "**/.DS_Store"
+ ],
+ "devDependencies":{
+ "testbox":"^5.0.0"
+ },
+ "installPaths":{
+ "testbox":"testbox/"
+ },
+ "testbox":{
+ "runner":"http://127.0.0.1:8080/tests/runner.cfm"
+ },
+ "scripts":{
+ "start":"server start",
+ "stop":"server stop",
+ "test":"testbox run"
+ }
+}

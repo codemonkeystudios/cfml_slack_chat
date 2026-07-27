@@ -1,0 +1,72 @@
+/*
+ * Chat-specific presentation only. Bootstrap does the rest.
+ *
+ * Everything here exists because a scrolling message list with two speakers is
+ * the one thing a general-purpose CSS framework does not hand you.
+ */
+
+.chat-card {
+	min-height: 32rem;
+}
+
+.message-panel {
+	height: 26rem;
+	overflow-y: auto;
+	background-color: var(--bs-body-bg);
+	scroll-behavior: smooth;
+}
+
+.message-row {
+	display: flex;
+	margin-bottom: 0.75rem;
+}
+
+.message-row-customer {
+	justify-content: flex-end;
+}
+
+.message-row-support {
+	justify-content: flex-start;
+}
+
+.message-bubble {
+	max-width: 80%;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.75rem;
+	border: 1px solid var(--bs-border-color);
+}
+
+.message-bubble-customer {
+	background-color: var(--bs-primary-bg-subtle);
+	border-color: var(--bs-primary-border-subtle);
+	border-bottom-right-radius: 0.25rem;
+}
+
+.message-bubble-support {
+	background-color: var(--bs-secondary-bg);
+	border-bottom-left-radius: 0.25rem;
+}
+
+.message-meta {
+	font-size: 0.75rem;
+	color: var(--bs-secondary-color);
+	margin-bottom: 0.25rem;
+}
+
+.message-body {
+	/* Preserve the line breaks the visitor typed without letting a long
+	 unbroken string push the layout sideways. */
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}
+
+@media (max-width: 575.98px) {
+
+	.message-panel {
+		height: 20rem;
+	}
+
+	.message-bubble {
+		max-width: 92%;
+	}
+}
