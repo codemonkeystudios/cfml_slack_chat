@@ -35,7 +35,6 @@ interface; the database is the system of record.
 22. [Project structure](#project-structure)
 23. [Known limitations](#known-limitations)
 24. [Production hardening](#production-hardening)
-25. [License](#license)
 
 ---
 
@@ -817,10 +816,3 @@ burning its retry budget against a wall in the first thirty seconds.
 
 **Attachments, edits and deletions.** All three are genuine features rather than
 missing plumbing. Each needs a product decision before it needs code.
-
-## License
-
-No license has been chosen for this repository yet, which means default copyright
-applies and nobody else has permission to use it. Add a license file before
-publishing — MIT or Apache-2.0 are the usual choices for a reference
-implementation intended to be copied from.
